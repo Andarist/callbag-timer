@@ -1,6 +1,6 @@
 {
   "name": "callbag-timer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "👜 Callbag source that after given duration, emit numbers in sequence every specified duration.",
   "main": "dist/callbag-timer.js",
   "module": "dist/callbag-timer.es.js",
