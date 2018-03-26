@@ -1,0 +1,48 @@
+{
+  "name": "callbag-timer",
+  "version": "0.0.0",
+  "description": "👜 Callbag source that after given duration, emit numbers in sequence every specified duration.",
+  "main": "dist/callbag-timer.js",
+  "module": "dist/callbag-timer.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "jest",
+    "precommit": "lint-staged",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "prepare": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/callbag-timer.git"
+  },
+  "keywords": [
+    "callbag",
+    "callbags",
+    "timer"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/callbag-timer/issues"
+  },
+  "homepage": "https://github.com/Andarist/callbag-timer#readme",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.42",
+    "@babel/preset-env": "7.0.0-beta.42",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "callbag-for-each": "^1.0.1",
+    "callbag-pipe": "^1.1.1",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^4.0.0-beta.3"
+  }
+}
