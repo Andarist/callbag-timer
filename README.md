@@ -60,6 +60,7 @@ pipe(
 import dropUntil from 'callbag-drop-until'
 import forEach from 'callbag-for-each'
 import pipe from 'callbag-pipe'
+import interval from 'callbag-interval'
 import timer from 'callbag-timer'
 
 pipe(
