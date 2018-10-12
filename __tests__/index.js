@@ -1,5 +1,7 @@
 import forEach from 'callbag-for-each'
+import interval from 'callbag-interval'
 import pipe from 'callbag-pipe'
+import takeUntil from 'callbag-take-until'
 
 import timer from '../src'
 
@@ -37,10 +39,11 @@ test('works with period argument', () => {
 
   pipe(
     timer(20, 10),
+    takeUntil(interval(55)),
     forEach(data => actual.push(data)),
   )
 
-  return delay(60).then(() => {
+  return delay(55).then(() => {
     expect(actual).toEqual([0, 1, 2, 3])
   })
 })
